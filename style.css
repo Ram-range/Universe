@@ -91,3 +91,11 @@ body {
     95% { left: 95%; opacity: 1; }
     100% { left: 100%; opacity: 0; }
 }
+
+/* Sembunyikan isi web utama dulu saat pertama kali dimuat */
+.main-content {
+    display: none; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    }
