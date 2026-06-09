@@ -2,19 +2,41 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Loading Kosmis</title>
+    <title>Web Alam Semesta</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="loading-container">
-        <h1 class="loading-text">loading...</h1>
-        
+    <div class="loading-container" id="loader">
+        <h1 class="loading-text">(loading...)</h1>
         <div class="particle-bar-container">
             <div class="particle-bar"></div>
         </div>
     </div>
 
+
+    <div class="main-content" id="content">
+        <header>
+            <h1>Jelajah alam semesta</h1>
+            <p>Selamat datang di pusat informasi galaksi dan tata surya.</p>
+        </header>
+        
+        <section>
+            <h2>Galaksi Bimasakti</h2>
+            <p>Ini adalah tempat di mana bumi dan sistem tata surya kita berada...</p>
+        </section>
+    </div>
+
+
+    <script>
+        // Setelah 3 detik (3000 milidetik), jalankan fungsi ini
+        setTimeout(function() {
+            // Sembunyikan loading
+            document.getElementById('loader').style.display = 'none';
+            // Munculkan isi web utama
+            document.getElementById('content').style.display = 'block';
+        }, 3000); 
+    </script>
+
 </body>
-</html>
+    </html>
